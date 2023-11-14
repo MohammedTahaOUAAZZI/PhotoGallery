@@ -44,8 +44,9 @@ p{ font-size:16px;
         display: flex;
         align-items:center;
         justify-content: space-between;
-        padding:20px 80px;
-        background : rgb(199, 223, 199);
+        padding:40px 100px;
+        position: absolute;
+        background-color: black;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
         z-index:999;
         position:sticky;/* bach la bare lfoqania tbqa dima tban */
@@ -68,29 +69,29 @@ p{ font-size:16px;
   #navbar li a{ text-decoration: none; /*delete points*/
             font-size:16px;
             font-weight:600;
-            color:#1a1a1a;
+            color:#d30404;
         transition :0.2s ease;}/*so when we hover the coloor change is being smooth*/
         
         #navbar li a:hover,
         #navbar li a.active   /*so when we r active on a page its the icone is highlighted*/
         {
-                color:#bc11da;
+                color: white;
             }    
             
  #navbar li a.active::after,
  #navbar li a:hover::after  /*bach n addiw dik ligne zr9a lteht mni kat hovri*/
  {
      content:"";
-     width: 30%;
+     width: 60%;
      height:2px;
-     background:#bc11da;
+     background:rgb(218, 17, 17);
      position:absolute;
      bottom:-4px;
      left:20px;
  }      
  /* HOME PAGE*/
  #hero{
-     background-image: url("img/model.jpg");
+     background-image: url("../image/photographer.jpeg");
 
 width:100%;
 height:100vh;
@@ -104,6 +105,10 @@ justify-content: center;
  }     
  #hero h3{
      padding-bottom:10px;
+ }
+ #hero h1{
+
+    color: rgb(212, 200, 200);
  }
  
      
